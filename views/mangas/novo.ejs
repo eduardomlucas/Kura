@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Registro de mangas</title>
+</head>
+
+<body>
+    <div class="container">
+       <%- include ('../partials/navbar'); %>
+       <div class="card">
+           <div class="card-body">
+               <h3 class="card-title">Cadastro de mangas</h3>
+                    <form action="/mangas/salvar" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome do manga</label>
+                            <input class="form-control" type="text" id="nome" name="nome" 
+                                    placeholder="Informe o nome do manga" required> <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="capitulo">capitulo</label>
+                            <input class="form-control" type="number" id="capitulo" name="capitulo" 
+                                    placeholder="Informe o capitulo" required> <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="lancamento">Lançamento</label>
+                            <input class="form-control" type="date" id="lancamento" name="lancamento"> <br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select class="form-control" name="status" id="status">
+                                <option value="lendo">lendo</option>
+                                <option value="finalizado">finalizado</option>
+                                <option value="ler futuramente">ler futuramente</option>
+                            </select>
+                        </div>    
+
+                        <div class="form-group">
+                            <label for="categoria">categoria</label>
+                            <select class="form-control" id="categoria" name="categoria">
+                                <% categorias.forEach( function(categoria) { %>
+                                    <option value=" <%=categoria.id%> "> <%=categoria.nome%> </option>
+                                <% }) %> 
+
+
+                            </select><br>
+                        </div>
+                        <input class="btn btn-outline-success" type="submit" value="Salvar">
+                        <a href="/mangas" class="btn btn-outline-dark">Lista de mangas</a>
+                    </form>
+           </div>
+       </div>
+       <% if(mensagem){ %>
+            <div class="alert alert-info">
+                <strong>Novo registro!</strong> <%= mensagem %>
+            </div>
+
+       <% } %>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html> 

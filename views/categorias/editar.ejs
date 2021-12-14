@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Cadastro de Categorias</title>
+</head>
+
+<body>
+    <div class="container">
+       <%- include ('../partials/navbar'); %>
+       <div class="card">
+           <div class="card-body">
+               <h3 class="card-title">Edição de categorias</h3>
+                    <form action="/categorias/atualizar" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome do Categoria</label>
+                            <input class="form-control" type="text" id="nome" name="nome" 
+                                    placeholder="Informe o nome do categoria" required value="<%=categoria.nome%>"> <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">descrição</label>
+                            <input class="form-control" type="descricao" id="descricao" name="descricao" 
+                                    placeholder="descricao categoria" required value="<%=categoria.descricao%>"> <br>
+                        </div>
+                        <input type="hidden" name="id" value="<%=categoria.id%>">
+                        <input class="btn btn-outline-success" type="submit" value="Atualizar">
+                        <a href="/categorias/lista" class="btn btn-outline-dark">Lista de categorias</a>
+                    </form>
+           </div>
+       </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html> 

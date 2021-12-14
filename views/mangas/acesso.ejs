@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title><%=manga.nome%></title>
+</head>
+
+<body>
+
+    <div class="container">
+       <%- include ('../partials/navbar'); %>
+               
+       <nav class="nav justify-content-center"><h3><%=manga.nome%></h3></nav>  
+    </div>
+
+    <div style="margin-left: 30px; margin-top: 10px; position: absolute;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">Descrição</div>
+                <div class="card-body">
+                    <h5 class="card-title">-------------------------------</h5>
+                    <p class="card-text"> Data de lançamento: <%=formataData(manga.lancamento, "AAAA")%> </p>
+                    <p class="card-text"><%=manga.capitulo%> capítulos</p>
+                    
+                </div>
+        </div>
+    </div>  
+    
+    <div style="margin-left: 980px;  position: relative;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">L E I A A G O R A</div>
+                    <div class="card-body">
+                        <h5 class="card-title">-------------------------------</h5>
+                        <a href="https://mangalivre.net/" class="btn btn-secondary">LEIA AGORA</a>
+                        <h5 class="card-title">-------------------------------</h5>
+                        <p class="card-text">(você sairá do site)</p>
+                    </div>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html> 

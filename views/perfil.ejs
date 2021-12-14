@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Mangas</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="background-color: #fff5fd">
+        <%- include ('partials/navbar'); %>
+        <div class="card-header" style="background-color: #fff5fd">
+            <h1 class="display-5; fw-bold">Seja bem vindo! USUÁRIO</h1>
+        </div>
+    </div>
+
+    <nav class="nav justify-content-center"><h3>Ultimos Adicionados</h3></nav>
+    
+    <div style="margin-left: 110px; margin-top: 10px;">
+        <%mangas.forEach(function(manga){ %>  <!--para cada mangas presente no banco renderiza a table  -->
+            
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><%=manga.nome%></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Estilo: <%=manga.categoria.nome%></h5>
+                      <p class="card-text"><%=manga.capitulo%> capítulos</p>
+                      <p class="card-text">Status: <%=manga.status%></p>
+                      <a href="/mangas/acesso/<%=manga.id%>" class="btn btn-secondary">Ver Sobre</a>
+                    </div>
+                  </div>
+
+        <% }) %>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
