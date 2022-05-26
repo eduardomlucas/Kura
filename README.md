@@ -11,14 +11,19 @@ através da aplicação.
 [Front-end]
  
 -ejs
+
 -bootstrap
+
 -w2ui -> adm
 
 [Back-end]
 
 -nodejs
+
 -express
+
 -sequelize -> db
+
 -firebase -> auth
 
 [DataBase]
