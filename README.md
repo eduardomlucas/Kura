@@ -9,10 +9,10 @@ lista de mangas a serem lidos.
 
 -FUNCTIONS
 
-function ( Login ) Off
-function ( Front / Back - End ) Checked
-function ( Reading Status ) Checked
-function ( Share ) Off
+.function ( Login ) Off
+.function ( Front / Back - End ) Checked
+.function ( Reading Status ) Checked
+.function ( Share ) Off
 
 _________________________________________________________________________________________________________________________________________________________________________
 EDUARDO M. LUCAS (2022).
