@@ -1,22 +1,18 @@
-# manga_reader
--TRABALHO DE CONCLUSÃO DE CURSO
+# Kura
+                                                                  TRABALHO DE CONCLUSÃO DE CURSO
 
------DESCRIÇÃO-----
+-DESCRIÇÃO
+Uma aplicação web, com o objetivo de ajudar leitores de mangas a se "encontrarem" em suas leituras,
+podendo saber os mangas lidos, que estão lendo, e quais serão os lidos no futuro assim criando uma
+lista de mangas a serem lidos.
 
--UMA APLICAÇÃO WEB, COM O OBJETIVO DE AJUDAR LEITORES DE MANGAS A SE "ENCONTRAREM" EM SUAS LEITURAS,
-PODENDO SABER OS MANGAS LIDOS, QUE ESTÃO LENDO, E QUAIS SERÃO OS LIDOS NO FUTURO ASSIM CRIANDO UMA
-LISTA DE MANGAS A SEREM LIDOS.
 
+-FUNCTIONS
 
------FUNCTIONS-----
--FUNCTION ( LOGIN ) OFF
+function ( Login ) Off
+function ( Front / Back - End ) Checked
+function ( Reading Status ) Checked
+function ( Share ) Off
 
--FUNCTION ( FRONT / BACK - END ) CHECK
-
--FUNCTION ( READING STATUS ) CHECK
-
--FUNCTION ( SHARE ) OFF
-
--------------------
-
+_________________________________________________________________________________________________________________________________________________________________________
 EDUARDO M. LUCAS (2022).
